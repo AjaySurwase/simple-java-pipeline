@@ -14,7 +14,7 @@ stages{
     stage('build')
     {
         steps {
-            sh 'mvn clean package'
+            sh 'cd simple-java-maven-app && mvn clean package'
         }
 
         post {
